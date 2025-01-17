@@ -1,14 +1,12 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - devansh-lodha
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - devansh-lodha/vlms-are-blind-analysis
+  - devansh-lodha/carvana-seg-resnet18
+  - devansh-lodha/es335-24-fall-assignment-3
+  - devansh-lodha/whatthehack-ml-sobelfilter
+  - devansh-lodha/es335-24-fall-assignment-1
+  
