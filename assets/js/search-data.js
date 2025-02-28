@@ -39,6 +39,9 @@ ninja.data = [{
           section: "News",},{id: "news-joining-tedxiitgandhinagar-as-licensee-organizer-and-design-core",
           title: 'Joining TEDxIITGandhinagar as Licensee, Organizer and Design Core!',
           description: "",
+          section: "News",},{id: "news-recognized-by-the-head-of-department-hod-cse-iit-gandhinagar-for-being-among-the-top-20-of-students-in-the-computer-science-and-engineering-branch-letter-of-acknowledgement",
+          title: 'Recognized by the Head of Department (HOD), CSE, IIT Gandhinagar, for being among...',
+          description: "",
           section: "News",},{
         id: 'social-discord',
         title: 'Discord',
