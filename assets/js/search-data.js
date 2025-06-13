@@ -30,6 +30,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/repositories/";
           },
+        },{id: "nav-academic-service",
+          title: "academic service",
+          description: "A list of my teaching, leadership, and other academic service activities.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/service/";
+          },
         },{id: "news-made-it-to-semester-1-s-dean-s-list-letter-of-appreciation",
           title: 'Made it to Semester-1’s Dean’s List! (Letter of Appreciation)',
           description: "",
@@ -42,7 +49,22 @@ ninja.data = [{
           section: "News",},{id: "news-recognized-by-the-head-of-department-hod-cse-iit-gandhinagar-for-being-among-the-top-20-of-students-in-the-computer-science-and-engineering-branch-letter-of-acknowledgement",
           title: 'Recognized by the Head of Department (HOD), CSE, IIT Gandhinagar, for being among...',
           description: "",
-          section: "News",},{
+          section: "News",},{id: "service-tutorial-on-vision-language-models",
+          title: 'Tutorial on Vision Language Models',
+          description: "",
+          section: "Service",handler: () => {
+              window.location.href = "/service/1_acm_tutorial/";
+            },},{id: "service-teaching-assistant-es-335-machine-learning-upcoming",
+          title: 'Teaching Assistant, ES 335: Machine Learning (Upcoming)',
+          description: "",
+          section: "Service",handler: () => {
+              window.location.href = "/service/2_es335_ta/";
+            },},{id: "service-organizer-amp-licensee-tedxiitgandhinagar",
+          title: 'Organizer &amp;amp; Licensee, TEDxIITGandhinagar',
+          description: "",
+          section: "Service",handler: () => {
+              window.location.href = "/service/3_tedx/";
+            },},{
         id: 'social-discord',
         title: 'Discord',
         section: 'Socials',
