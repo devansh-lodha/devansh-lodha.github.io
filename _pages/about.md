@@ -19,7 +19,7 @@ social: true # includes social icons at the bottom of the page
 
 Hello! I am an undergraduate student at [IIT Gandhinagar](https://iitgn.ac.in/) (Class of 2027) pursuing B.Tech. in Computer Science and Engineering.
 
-My fascination with Probability and Statistics, sparkled by [Professor Shanmuga](https://shanmuga.people.iitgn.ac.in/)'s class during my second semester led me to delve deeper into Machine Learning. I am particularly intrigued by the Probabilistic Approaches. I am also interested in Computer Vision and Deep Learning. I am currently working on a project with [Professor Nipun Batra](https://nipunbatra.github.io/) and [Sustainability Lab](https://sustainability-lab.github.io/members.html) that involves using Vision Language Models for Object Detection in Satellite Imagery. I am also working on Medical Ultrasound Image Segmentation with [Professor Himanshu Shekhar](https://labs.iitgn.ac.in/muselaboratory/himanshushekhar/) and [MUSE Lab](https://labs.iitgn.ac.in/muselaboratory/).
+My fascination with Probability and Statistics, sparkled by [Professor Shanmuga](https://shanmuga.people.iitgn.ac.in/)'s class during my second semester led me to delve deeper into Machine Learning. I am particularly intrigued by the Probabilistic Approaches. I am also interested in Computer Vision and Deep Learning. I am currently working at [Sustainability Lab](https://sustainability-lab.github.io/) under [Professor Nipun Batra](https://nipunbatra.github.io/) and  that involves using Vision Language Models for Object Detection in Satellite Imagery.
 
 Outside of academics, I love relaxing through swimming and gaming.
 

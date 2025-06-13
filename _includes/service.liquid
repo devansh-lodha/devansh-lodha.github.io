@@ -1,0 +1,16 @@
+<div class="col">
+  <div class="card h-100">
+    <div class="card-body">
+      <h5 class="card-title">{{ include.item.title }}</h5>
+      <p class="card-text"><em>{{ include.item.role }}</em></p>
+      <p class="card-text">{{ include.item.details }}</p>
+    </div>
+    {% if include.item.links %}
+    <div class="card-footer">
+      {% for link in include.item.links %}
+        <a href="{{ link.url }}" class="btn btn-outline-light btn-sm z-depth-0 rounded-pill" role="button" target="_blank" style="text-transform: none;">{{ link.name }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</div>

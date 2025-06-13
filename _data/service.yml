@@ -1,0 +1,25 @@
+- title: "Organizer & Licensee, TEDxIITGandhinagar"
+  role: "Indian Institute of Technology, Gandhinagar"
+  details: "As the primary licensee, I led a team of 80+ students to organize the first-ever TEDx event at IIT Gandhinagar, featuring prominent speakers like Manish Gupta from Google DeepMind. I directed the design and tech core, managed all technical production from videography to post-production for the official TEDx YouTube channel, and developed the event's official website."
+  links:
+    - name: "Official TEDx Event Page"
+      url: "https://www.ted.com/tedx/events/59767"
+
+- title: "Tutorial on Vision Language Models"
+  role: "AI for Social Good, ACM India Summer School 2025"
+  details: "Delivered a hands-on tutorial on Vision Language Models to a cohort of 60+ participants at the ACM India Summer School hosted at IIT Gandhinagar."
+  links:
+    - name: "Blog Post"
+      url: "[Link to your blog post]" # <-- ADD YOUR BLOG POST LINK HERE
+    - name: "Jupyter Notebook"
+      url: "[Link to your notebook]" # <-- ADD YOUR JUPYTER NOTEBOOK LINK HERE
+    - name: "YouTube Video"
+      url: "https://youtu.be/OgGh9DaPG4g?si=jE_2iB6jyyA-YWvE"
+    - name: "Event Page"
+      url: "https://sustainability-lab.github.io/acm-summer-2025/"
+    - name: "ACM India Page"
+      url: "https://india.acm.org/education/acm-india-summer-schools-2025"
+
+- title: "Teaching Assistant, Machine Learning"
+  role: "Indian Institute of Technology, Gandhinagar | Autumn 2025"
+  details: "Will be serving as a Teaching Assistant for the undergraduate Machine Learning course (CS XXX)."
