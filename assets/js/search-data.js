@@ -73,6 +73,11 @@ ninja.data = [{
           description: "",
           section: "Service",handler: () => {
               window.location.href = "/service/3_tedx/";
+            },},{id: "service-certification-in-teaching",
+          title: 'Certification in Teaching',
+          description: "",
+          section: "Service",handler: () => {
+              window.location.href = "/service/4_cert/";
             },},{
         id: 'social-discord',
         title: 'Discord',
