@@ -56,6 +56,16 @@
             </a>
           </li>
 
+          <!-- Blog -->
+          <li class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
+            <a class="nav-link" href="https://devansh-lodha.github.io/blog/" rel="noopener noreferrer">
+              blog
+              {% if page.url contains 'blog' %}
+                <span class="sr-only">(current)</span>
+              {% endif %}
+            </a>
+          </li>
+
           <!-- Other pages -->
           {% assign sorted_pages = site.pages | sort: 'nav_order' %}
           {% for p in sorted_pages %}
@@ -125,6 +135,14 @@
               </button>
             </li>
           {% endif %}
+
+          <!-- Resume -->
+          {% comment %} <li class="nav-item">
+            <a class="nav-link" href="{{ '/assets/pdf/devansh_resume.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">
+              resume
+            </a>
+          </li> {% endcomment %}
+
           {% if site.enable_darkmode %}
             <!-- Toogle theme mode -->
             <li class="toggle-container">

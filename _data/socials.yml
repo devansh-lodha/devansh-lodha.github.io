@@ -1,14 +1,34 @@
 # this file contains the social media links and usernames of the author
 # the socials will be displayed in the order they are defined here
 # for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
-cv_pdf: /assets/pdf/example_pdf.pdf # path to your CV PDF file
-email: you@example.com # your email address
-inspirehep_id: 1010907 # Inspire HEP author ID
-rss_icon: true # comment this line to hide the RSS icon
-scholar_userid: qc6CJjYAAAAJ # your Google Scholar ID
+email: devanshlodha12@gmail.com # your email address
+github_username: devansh-lodha # your GitHub user name
+linkedin_username: devanshlodha # your LinkedIn user name
+x_username: devanshlodha_12 # your X handle
+mastodon_username: mastodon.social/@devanshlodha # your mastodon instance+username in the format instance.tld/@username
+bluesky_url: https://bsky.app/profile/devansh-lodha.bsky.social # your bluesky URL
+discord_id: 323045915332050944 # your discord id (18-digit unique numerical identifier)
+gitlab_username: devansh-lodha # your GitLab user name
+orcid_id: 0009-0001-1399-9592 # your ORCID ID
+osf_id: dmqb6 # your OSF ID
+publons_id: PII-3796-2026 # Web of Science ResearcherID
+research_gate_profile: https://www.researchgate.net/profile/Devansh-Lodha-2 # your profile on ResearchGate
+kaggle_id: devanshlodha
+facebook_id: 100074659095188 # your facebook id
+instagram_id: devanshlodha_12 # your instagram id
+whatsapp_number: 917016784377 # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
+youtube_id: devansh-lodha
+# ieee_id: # your ieeexplore.ieee.org/author/id
+# rss_icon: false # set to true to show the RSS icon
+# scholar_userid: # your Google Scholar ID
+# scopus_id: # your profile on Scopus
+# semanticscholar_id: # your Semantic Scholar ID
+# zotero_username: # your Zotero username
 # wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
-# whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
-custom_social: # can be any name here other than the ones already defined in the jekyll-socials plugin
-  logo: https://www.alberteinstein.com/wp-content/uploads/2024/03/cropped-favicon-192x192.png # can be png, svg, jpg
-  title: Custom Social
-  url: https://www.alberteinstein.com/
+# custom_social: # can be any name here other than the ones already defined above
+#   logo: assets/img/apple_music_icon.svg # can be png, svg, jpg
+#   title: Apple Music
+#   url: https://music.apple.com/profile/devanshlodha12
+# cv_pdf: /assets/pdf/example_pdf.pdf # path to your CV PDF file
+# acm_id: # your dl.acm.org/profile/id
+# dblp_url: # your DBLP profile url
