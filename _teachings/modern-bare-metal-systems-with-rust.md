@@ -15,7 +15,7 @@ schedule:
     description: Bypassing the OS. Analysis of the VideoCore VII boot sequence, SD card configuration, and utilizing Serial Wire Debug (SWD) via OpenOCD and GDB to hijack the BCM2712 CPU execution pipeline.
     materials:
       - name: Slides
-        url: 
+        url: https://github.com/devansh-lodha/sc-409-pi5-bare-metal/blob/main/slides/sc_409_lecture_1.pdf
 
   - day: 2
     date: April 8, 2026
