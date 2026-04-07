@@ -1,63 +1,84 @@
 ---
 layout: course
-title: Modern Bare Metal Systems with Rust
-description: A student-run short course on systems programming for modern, disaggregated embedded architectures. We bridge the gap between traditional microcontroller firmware and server-class driver development using the Raspberry Pi 5.
+title: Modern Bare Metal Embedded Systems with Rust
+description: A bottom-up exploration of computer architecture, operating system bootstrapping, and hardware interfacing using the Raspberry Pi 5. 
 instructor: Devansh Lodha
 year: 2026
-term: TBD
-location: TBD
-time: TBD
-course_id: TBD
+term: 2
+location: AB 7/103
+time: 9:30 PM - 10:50 PM
+course_id: SC 409
 schedule:
-  - week: 1
-    date: TBD
-    topic: The Disaggregated Shift & Bootstrapping
-    description: Introduction to the BCM2712 and RP1 Southbridge. Setting up the Rust toolchain and transitioning from Assembly _start to Rust main at EL1.
+  - day: 1
+    date: April 7, 2026
+    topic: Firmware, Debug Probes, and the Hardware Backdoor
+    description: Bypassing the OS. Analysis of the VideoCore VII boot sequence, SD card configuration, and utilizing Serial Wire Debug (SWD) via OpenOCD and GDB to hijack the BCM2712 CPU execution pipeline.
+    materials:
+      - name: Slides
+        url: 
 
-  - week: 2
-    date: TBD
-    topic: PCIe Root Complex & Address Translation
-    description: Initializing the PCIe Gen2 link. Configuring Inbound/Outbound windows (BARs) so the CPU can "see" the peripheral bus.
+  - day: 2
+    date: April 8, 2026
+    topic: The ARMv8-A Architecture and Build Pipeline
+    description: The RISC Load/Store paradigm, AArch64 register file, and ALU operations. Deconstructing the cross-compilation pipeline, GNU Assembler directives, and Linker scripts to map physical RAM.
+    materials:
+      - name: Slides
+        url: 
 
-  - week: 3
-    date: TBD
-    topic: RP1 Enumeration
-    description: Scanning the PCIe bus to discover the RP1 (Vendor ID 0x1DE4). Enabling Bus Mastering and mapping the Southbridge's internal address space.
+  - day: 3
+    date: April 9, 2026
+    topic: The C-ABI Bridge and Exception Levels
+    description: Establishing the runtime environment. Enforcing AAPCS64 stack alignment, zeroing the .bss section, forging an Exception Context to drop from EL2 (Hypervisor) to EL1 (Kernel), and executing the jump to Rust.
+    materials:
+      - name: Slides
+        url: 
 
-  - week: 4
-    date: TBD
-    topic: Modern Interrupts (MSI-X & MIP)
-    description: Moving beyond physical IRQ wires. Configuring the Machine Interrupt Peripheral (MIP) "doorbell" and routing MSI-X messages to the CPU.
+  - day: 4
+    date: April 10, 2026
+    topic: Memory-Mapped I/O and Hardware Discovery
+    description: Interacting with physical peripherals. Reverse-engineering Linux Device Trees to locate the RP1 Southbridge. Using volatile memory operations to bypass LLVM compiler optimizations and prevent data corruption.
+    materials:
+      - name: Slides
+        url: 
 
-  - week: 5
-    date: TBD
-    topic: Drivers & The Firmware Trap
-    description: Implementing the PL011 UART driver over PCIe. Debugging the critical VPU firmware conflict INT_MASKL_VPU to enable console output.
+  - day: 5
+    date: April 11, 2026
+    topic: Zero-Cost Abstractions and Safe Hardware Drivers
+    description: Replacing raw pointers with Peripheral Access Crates (PACs). Using zero-sized types and move semantics to implement the Typestate pattern. Building a mathematically safe, polled PL011 UART driver and formatting engine.
+    materials:
+      - name: Slides
+        url: 
 ---
 
 ## Course Overview
 
-This is a specialized short course designed for students interested in advanced systems programming. Unlike traditional embedded courses that focus on simple microcontrollers with flat memory maps, this course tackles the complexity of **modern Single Board Computers (SBCs)** like the Raspberry Pi 5, which utilize server-class disaggregated architectures.
+This course bridges the gap between high-level software and physical silicon. Students will construct a bare-metal execution environment from scratch on the Raspberry Pi 5 (Cortex-A76). Bypassing standard operating systems and libraries, the curriculum relies exclusively on hardware datasheets, the ARM architectural reference manuals, and physical debug probes.
 
-Over five intensive sessions, we will demystify how to bring up a bare-metal kernel in **Rust**, covering the entire vertical stack from the instruction set up to the peripheral driver.
+Primary technical objectives:
+- Manipulate raw CPU state using hardware debuggers (SWD/JTAG).
+- Write and analyze AArch64 assembly and Linker scripts.
+- Bootstrap a minimal C/Rust runtime environment.
+- Interface with peripheral hardware via MMIO.
+- Leverage Rust's type system to enforce compile-time hardware safety.
 
-## Learning Outcomes
+## Repository
 
-By the end of this short course, you will understand:
-- **PCIe Orchestration:** How to manually manage the link between an Application Processor (BCM2712) and an I/O Southbridge (RP1).
-- **Address Translation:** How to configure Base Address Registers (BARs) and MMU windows.
-- **Interrupt Routing:** How Message Signaled Interrupts (MSI-X) work and how to configure the GICv2.
-- **Hardware Debugging:** How to reverse-engineer undocumented behavior in commodity silicon.
+All course materials, automation scripts, and source code are maintained in the primary repository:
+[https://github.com/devansh-lodha/sc-409-pi5-bare-metal](https://github.com/devansh-lodha/sc-409-pi5-bare-metal)
 
 ## Prerequisites
 
-- **Systems Programming:** Comfort with C, C++, or Rust (pointers, memory management, bitwise operations).
-- **Computer Architecture:** Basic understanding of registers, interrupts, stacks, and virtual memory.
-- **Hardware:** A Raspberry Pi 5 and a USB-to-UART debug probe are highly recommended for following along.
+- Understanding of binary and hexadecimal arithmetic.
+- Familiarity with the the CLI.
+- Basic understanding of computer organization (memory, CPU, registers).
 
-## Resources
+## References
 
-- **Primary Reference:** *Bare Metal Orchestration on the Raspberry Pi 5* (Course Notes).
-- **Datasheets:**
-  - *RP1 Peripherals Specification*
-- **Language:** *The Rust Programming Language*
+The course material is derived directly from the following hardware documentation:
+- [*ARM Cortex-A Series Programmer’s Guide for ARMv8-A*](https://cs140e.sergio.bz/docs/ARMv8-A-Programmer-Guide.pdf)
+- [*Raspberry Pi RP1 Peripherals Datasheet*](https://pip-assets.raspberrypi.com/categories/892-raspberry-pi-5/documents/RP-008370-DS-1-rp1-peripherals.pdf?disposition=inline)
+- [*Raspberry Pi BCM2711 ARM Peripherals Datasheet*](https://pip-assets.raspberrypi.com/categories/545-raspberry-pi-4-model-b/documents/RP-008248-DS-1-bcm2711-peripherals.pdf?disposition=inline)
+
+## Grading
+
+Pass will be awarded for full attendance.
