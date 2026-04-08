@@ -11,24 +11,24 @@ course_id: SC 409
 schedule:
   - day: 1
     date: April 7, 2026
-    topic: Firmware, Debug Probes, and the Hardware Backdoor
-    description: Bypassing the OS. Analysis of the VideoCore VII boot sequence, SD card configuration, and utilizing Serial Wire Debug (SWD) via OpenOCD and GDB to hijack the BCM2712 CPU execution pipeline.
+    topic: Firmware and Introduction
+    description: Applications and Industry Landscape. Abstractions. Analysis of the VideoCore VII boot sequence, SD card configuration. Introduction to Cross Compilation and the Build Pipeline.
     materials:
       - name: Slides
         url: https://github.com/devansh-lodha/sc-409-pi5-bare-metal/blob/main/slides/sc_409_lecture_1.pdf
 
   - day: 2
     date: April 8, 2026
-    topic: The ARMv8-A Architecture and Build Pipeline
-    description: The RISC Load/Store paradigm, AArch64 register file, and ALU operations. Deconstructing the cross-compilation pipeline, GNU Assembler directives, and Linker scripts to map physical RAM.
+    topic:  The Debug Probe, and ARM CoreSight. Hardware Debugging. The ARMv8-A Architecture - I
+    description: Utilizing Serial Wire Debug (SWD) via OpenOCD and GDB to hijack the BCM2712 CPU execution pipeline. The RISC Load/Store paradigm, AArch64 register file.
     materials:
       - name: Slides
-        url: 
+        url: https://github.com/devansh-lodha/sc-409-pi5-bare-metal/blob/main/slides/sc_409_lecture_2.pdf
 
   - day: 3
     date: April 9, 2026
-    topic: The C-ABI Bridge and Exception Levels
-    description: Establishing the runtime environment. Enforcing AAPCS64 stack alignment, zeroing the .bss section, forging an Exception Context to drop from EL2 (Hypervisor) to EL1 (Kernel), and executing the jump to Rust.
+    topic:  The ARMv8-A Architecture - II, The C-ABI Bridge and Exception Levels
+    description: ALU operations. Deconstructing the cross-compilation pipeline, GNU Assembler directives, and Linker scripts to map physical RAM. Establishing the runtime environment. Enforcing AAPCS64 stack alignment, zeroing the .bss section, forging an Exception Context to drop from EL2 (Hypervisor) to EL1 (Kernel), and executing the jump to Rust.
     materials:
       - name: Slides
         url: 
