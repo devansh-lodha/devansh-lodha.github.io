@@ -27,16 +27,16 @@ schedule:
 
   - day: 3
     date: April 9, 2026
-    topic:  The ARMv8-A Architecture - II, The C-ABI Bridge and Exception Levels
-    description: ALU operations. Deconstructing the cross-compilation pipeline, GNU Assembler directives, and Linker scripts to map physical RAM. Establishing the runtime environment. Enforcing AAPCS64 stack alignment, zeroing the .bss section, forging an Exception Context to drop from EL2 (Hypervisor) to EL1 (Kernel), and executing the jump to Rust.
+    topic:  The ARMv8-A Architecture - II
+    description: ALU operations. Deconstructing the cross-compilation pipeline, GNU Assembler directives, and Linker scripts to map physical RAM. Establishing the runtime environment. Enforcing AAPCS64 stack alignment, zeroing the .bss section.
     materials:
       - name: Slides
-        url: 
+        url: https://github.com/devansh-lodha/sc-409-pi5-bare-metal/blob/main/slides/sc_409_lecture_3.pdf
 
   - day: 4
     date: April 10, 2026
-    topic: Memory-Mapped I/O and Hardware Discovery
-    description: Interacting with physical peripherals. Reverse-engineering Linux Device Trees to locate the RP1 Southbridge. Using volatile memory operations to bypass LLVM compiler optimizations and prevent data corruption.
+    topic: The C-ABI Bridge and Exception Levels, Memory-Mapped I/O and Hardware Discovery.
+    description: Forging an Exception Context to drop from EL2 (Hypervisor) to EL1 (Kernel), and executing the jump to Rust. Interacting with physical peripherals. Reverse-engineering Linux Device Trees to locate the RP1 Southbridge. Using volatile memory operations to bypass LLVM compiler optimizations and prevent data corruption.
     materials:
       - name: Slides
         url: 
