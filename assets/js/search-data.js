@@ -490,9 +490,9 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
-            },},{id: "teachings-",
-          title: '',
-          description: "",
+            },},{id: "teachings-modern-bare-metal-embedded-systems-with-rust",
+          title: 'Modern Bare Metal Embedded Systems with Rust',
+          description: "A bottom-up exploration of computer architecture, operating system bootstrapping, and hardware interfacing using the Raspberry Pi 5.",
           section: "Teachings",handler: () => {
               window.location.href = "/teachings/modern-bare-metal-systems-with-rust/";
             },},{
