@@ -35,16 +35,16 @@ schedule:
 
   - day: 4
     date: April 10, 2026
-    topic: The C-ABI Bridge and Exception Levels, Memory-Mapped I/O and Hardware Discovery.
-    description: Forging an Exception Context to drop from EL2 (Hypervisor) to EL1 (Kernel), and executing the jump to Rust. Interacting with physical peripherals. Reverse-engineering Linux Device Trees to locate the RP1 Southbridge. Using volatile memory operations to bypass LLVM compiler optimizations and prevent data corruption.
+    topic: The C-ABI Bridge and Exception Levels
+    description: Forging an Exception Context to drop from EL2 (Hypervisor) to EL1 (Kernel), and executing the jump to Rust. Writing a reentrant panic handler.
     materials:
       - name: Slides
-        url: 
+        url: https://github.com/devansh-lodha/sc-409-pi5-bare-metal/blob/main/slides/sc_409_lecture_4.pdf
 
   - day: 5
     date: April 11, 2026
-    topic: Zero-Cost Abstractions and Safe Hardware Drivers
-    description: Replacing raw pointers with Peripheral Access Crates (PACs). Using zero-sized types and move semantics to implement the Typestate pattern. Building a mathematically safe, polled PL011 UART driver and formatting engine.
+    topic: , Memory-Mapped I/O and Hardware Discovery, Zero-Cost Abstractions and Safe Hardware Drivers
+    description: Interacting with physical peripherals. Using datasheets and device trees. Using volatile memory operations to bypass LLVM compiler optimizations and prevent data corruption. Replacing raw pointers with Peripheral Access Crates (PACs). Using zero-sized types and move semantics to implement the Typestate pattern. Building a mathematically safe, polled PL011 UART driver and formatting engine.
     materials:
       - name: Slides
         url: 
