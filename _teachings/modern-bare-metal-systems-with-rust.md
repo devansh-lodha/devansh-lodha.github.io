@@ -47,7 +47,7 @@ schedule:
     description: Interacting with physical peripherals. Using datasheets and device trees. Using volatile memory operations to bypass LLVM compiler optimizations and prevent data corruption. Replacing raw pointers with Peripheral Access Crates (PACs). Using zero-sized types and move semantics to implement the Typestate pattern. Building a mathematically safe, polled PL011 UART driver and formatting engine.
     materials:
       - name: Slides
-        url: 
+        url: https://github.com/devansh-lodha/sc-409-pi5-bare-metal/blob/main/slides/sc_409_lecture_5.pdf
 ---
 
 ## Course Overview
